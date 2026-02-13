@@ -1,5 +1,4 @@
 'use client';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -11,7 +10,7 @@ export default function Footer() {
     const getUrl = async () => {
       const resp = await fetch('https://pget.vercel.app/')
       const data = await resp.json();
-      setUrl(data.url); 
+      setUrl(data); 
     }
     getUrl();
   }, [])

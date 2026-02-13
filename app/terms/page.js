@@ -95,7 +95,7 @@ export default function TermsPage() {
                   items={[
                     'This website contains material which is owned by or licensed to us. This includes the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the copyright notice.',
                     'All trademarks reproduced that are not the property of, or licensed to, us are acknowledged on the website.',
-                    'You may not create a link to our website from another website or document without prior written consent from KAUSHIK VERMA.',
+                    'You may not create a link to our website from another website or document without prior written consent from  VERMA.',
                   ]}
                 />
 

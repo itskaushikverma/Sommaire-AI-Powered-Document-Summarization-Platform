@@ -250,7 +250,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <h3>Kaushik Verma</h3>
   
   [![Email](https://img.shields.io/badge/Email-kauhsikverma321%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:kauhsikverma321@gmail.com)
-  [![Website](https://img.shields.io/badge/Website-kaushikverma.me-000000?style=for-the-badge&logo=vercel)](https://kaushikverma.me/)
+  [![Website](https://img.shields.io/badge/Website-kaushikverma-000000?style=for-the-badge&logo=vercel)](https://pget.vercel.app/)
   [![GitHub](https://img.shields.io/badge/GitHub-kaushik--2318-181717?style=for-the-badge&logo=github)](https://github.com/kaushik-2318)
 </div>
 
