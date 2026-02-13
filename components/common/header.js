@@ -9,7 +9,7 @@ export default function Header() {
     <nav className="container mx-auto flex items-center justify-between px-8 py-4">
       <div className="flex lg:flex-1">
         <NavLink href="/" className="flex shrink-0 items-center gap-1 lg:gap-2">
-          <Logo />
+          <Logo href={null} />
         </NavLink>
       </div>
 
