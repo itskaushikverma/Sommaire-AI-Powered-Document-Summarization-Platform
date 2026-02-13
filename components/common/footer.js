@@ -1,8 +1,21 @@
+'use client';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Footer() {
+  const [url, setUrl] = useState('');
+
+  useEffect(() => {
+    const getUrl = async () => {
+      const resp = await fetch('https://pget.vercel.app/')
+      const data = await resp.json();
+      setUrl(data.url); 
+    }
+    getUrl();
+  }, [])
+  
   return (
     <footer className="mt-auto w-full bg-gray-200/20 px-4 pt-4 pb-6 sm:p-2 md:px-12 md:pt-12 lg:px-24">
       <div className="flex items-center justify-around md:items-start lg:justify-normal">
@@ -19,7 +32,7 @@ export default function Footer() {
           <div className="mr-auto text-center text-base text-gray-400 outline-none lg:text-lg">
             Made by
             <span className="px-1 underline underline-offset-4">
-              <Link target="blank" href="https://kaushikverma.me/">
+              <Link target="blank" href={url}>
                 Kaushik Verma
               </Link>
             </span>
@@ -92,7 +105,7 @@ export default function Footer() {
           <Link
             target="blank"
             className="underline dark:text-gray-400"
-            href="https://kaushikverma.me/"
+            href={url}
           >
             Kaushik Verma
           </Link>
