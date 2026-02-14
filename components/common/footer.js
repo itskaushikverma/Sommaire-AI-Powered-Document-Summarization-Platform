@@ -8,13 +8,13 @@ export default function Footer() {
 
   useEffect(() => {
     const getUrl = async () => {
-      const resp = await fetch('https://pget.vercel.app/')
+      const resp = await fetch('https://pget.vercel.app/');
       const data = await resp.json();
-      setUrl(data); 
-    }
+      setUrl(data);
+    };
     getUrl();
-  }, [])
-  
+  }, []);
+
   return (
     <footer className="mt-auto w-full bg-gray-200/20 px-4 pt-4 pb-6 sm:p-2 md:px-12 md:pt-12 lg:px-24">
       <div className="flex items-center justify-around md:items-start lg:justify-normal">
