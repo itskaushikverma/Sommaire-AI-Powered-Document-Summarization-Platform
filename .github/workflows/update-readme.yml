@@ -1,0 +1,54 @@
+name: Added Social Media Link to README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run script
+        run: npx tsx update-readme.ts
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          # Stage the file
+          git add README.md
+
+          # Check if there are actually changes in the index (the --cached flag is key)
+          if git diff --cached --quiet; then
+            echo "No changes to README.md. Skipping."
+          else
+            # 1. Commit the staged changes
+            git commit -m "Auto update portfolio URL"
+            
+            # 2. Pull remote changes safely by autostashing any incidental modifications (like package-lock.json)
+            git pull --rebase --autostash origin ${{ github.ref_name }}
+            
+            # 3. Push the clean history
+            git push origin ${{ github.ref_name }}
+          fi
