@@ -2,12 +2,7 @@
 import { Download } from 'lucide-react';
 import { Button } from '../ui/button';
 
-export default function DownloadSummaryButton({
-  title,
-  summaryText,
-  fileName,
-  createdAt,
-}) {
+export default function DownloadSummaryButton({ title, summaryText, fileName, createdAt }) {
   const handleDownload = () => {
     const summaryContent = `# ${title}
 Generated Summary:

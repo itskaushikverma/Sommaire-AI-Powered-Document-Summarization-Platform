@@ -1,9 +1,7 @@
 export const parseSection = (section) => {
   const [title, ...content] = section.split('\n');
 
-  const cleanTitle = title.startsWith('#')
-    ? title.substring(1).trim()
-    : title.trim();
+  const cleanTitle = title.startsWith('#') ? title.substring(1).trim() : title.trim();
 
   const points = [];
 
@@ -27,7 +25,7 @@ export const parseSection = (section) => {
   return {
     title: cleanTitle,
     points: points.filter(
-      (point) => point && !point.startsWith('#') && !point.startsWith('[Choose')
+      (point) => point && !point.startsWith('#') && !point.startsWith('[Choose'),
     ),
   };
 };

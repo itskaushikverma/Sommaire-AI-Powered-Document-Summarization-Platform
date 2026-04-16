@@ -12,8 +12,8 @@ export default function CTASection() {
               Ready to Save Hours of Reading Time?
             </h2>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Transform lengthy documents into clear, actionable insights with
-              our AI-powered summarizer.
+              Transform lengthy documents into clear, actionable insights with our AI-powered
+              summarizer.
             </p>
           </div>
           <div className="flex flex-col justify-center gap-2 min-[400px]:flex-row">
@@ -23,12 +23,8 @@ export default function CTASection() {
                 variant={'link'}
                 className="w-full bg-linear-to-r from-slate-900 to-rose-500 text-white transition-colors duration-1000 hover:from-rose-500 hover:to-slate-900 min-[400px]:w-auto"
               >
-                <Link
-                  href="/sign-in"
-                  className="flex items-center justify-center"
-                >
-                  Get Started{' '}
-                  <ArrowRight className="ml-2 h-4 w-4 animate-pulse" />
+                <Link href="/sign-in" className="flex items-center justify-center">
+                  Get Started <ArrowRight className="ml-2 h-4 w-4 animate-pulse" />
                 </Link>
               </Button>
             </div>

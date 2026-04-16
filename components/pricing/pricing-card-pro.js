@@ -9,13 +9,7 @@ import { getPriceId } from '@/lib/user';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
-export default async function PricingCardPro({
-  name,
-  description,
-  items,
-  id,
-  price,
-}) {
+export default async function PricingCardPro({ name, description, items, id, price }) {
   const user = await currentUser();
   const email = user?.emailAddresses?.[0]?.emailAddress;
 
@@ -31,7 +25,7 @@ export default async function PricingCardPro({
       <div
         className={cn(
           'relative z-10 flex h-full flex-col gap-4 rounded-2xl border-[1px] border-gray-500/20 p-8 lg:gap-8',
-          id === 'pro' && 'gap-5 border-2 border-rose-500'
+          id === 'pro' && 'gap-5 border-2 border-rose-500',
         )}
       >
         <MotionDiv
@@ -45,11 +39,7 @@ export default async function PricingCardPro({
           </div>
         </MotionDiv>
 
-        <MotionDiv
-          viewport={{ once: true }}
-          variants={listVariants}
-          className="flex gap-2"
-        >
+        <MotionDiv viewport={{ once: true }} variants={listVariants} className="flex gap-2">
           <p className="text-5xl font-extrabold tracking-tight">₹ {price}</p>
           <div className="mb-[5px] flex flex-col justify-end">
             <p className="text-xs">/month</p>
@@ -75,10 +65,7 @@ export default async function PricingCardPro({
           className="flex w-full justify-center space-y-2 no-underline"
         >
           {priceId === 'basic_free' ? (
-            <PaymentButton
-              email={email}
-              razorpayKey={process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID}
-            />
+            <PaymentButton email={email} razorpayKey={process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID} />
           ) : (
             <Link className="w-full no-underline" href="/upload">
               <Button

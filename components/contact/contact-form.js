@@ -4,13 +4,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { toast } from 'sonner';
 import { Loader2 } from 'lucide-react';
 
@@ -59,9 +53,7 @@ export default function ContactForm() {
   return (
     <Card className="overflow-hidden border-rose-100/30 bg-white/80 shadow-xl backdrop-blur-md transition-all duration-300 hover:bg-white/90 hover:shadow-2xl">
       <CardHeader className="bg-linear-to-r from-rose-50 to-white pb-6">
-        <CardTitle className="text-2xl font-bold text-gray-900">
-          Send us a message
-        </CardTitle>
+        <CardTitle className="text-2xl font-bold text-gray-900">Send us a message</CardTitle>
         <CardDescription>
           Fill out the form below and we'll get back to you as soon as possible.
         </CardDescription>
@@ -84,10 +76,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="email" className="text-sm font-medium text-gray-700">
               Email
             </label>
             <Input
@@ -103,10 +92,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <label
-              htmlFor="subject"
-              className="text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="subject" className="text-sm font-medium text-gray-700">
               Subject
             </label>
             <Input
@@ -121,10 +107,7 @@ export default function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <label
-              htmlFor="message"
-              className="text-sm font-medium text-gray-700"
-            >
+            <label htmlFor="message" className="text-sm font-medium text-gray-700">
               Message
             </label>
             <Textarea

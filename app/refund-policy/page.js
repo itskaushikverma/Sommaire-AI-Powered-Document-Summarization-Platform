@@ -1,9 +1,5 @@
 import BgGradient from '@/components/common/bg-gradient';
-import {
-  MotionDiv,
-  MotionH1,
-  MotionP,
-} from '@/components/common/motion-wrapper';
+import { MotionDiv, MotionH1, MotionP } from '@/components/common/motion-wrapper';
 import { containerVariants, itemVariants } from '@/utils/constants';
 import { Card, CardContent } from '@/components/ui/card';
 import { Ban, AlertCircle, HelpCircle, Mail } from 'lucide-react';
@@ -45,9 +41,9 @@ export default function RefundPolicyPage() {
                 variants={itemVariants}
                 className="mb-8 leading-relaxed text-gray-700"
               >
-                At <strong>KAUSHIK VERMA</strong>, we value transparency and
-                strive to offer high-quality digital content and services
-                through our platform. However, please note the following:
+                At <strong>KAUSHIK VERMA</strong>, we value transparency and strive to offer
+                high-quality digital content and services through our platform. However, please note
+                the following:
               </MotionP>
 
               <div className="space-y-8">
@@ -74,13 +70,11 @@ export default function RefundPolicyPage() {
               <div className="mt-10 rounded-lg bg-gray-50 p-6">
                 <div className="flex items-center gap-3">
                   <Mail className="h-6 w-6 text-rose-500" />
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Contact Us
-                  </h3>
+                  <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
                 </div>
                 <p className="mt-3 text-gray-600">
-                  If you have any questions about our Cancellation & Refund
-                  Policy, please contact us at:
+                  If you have any questions about our Cancellation & Refund Policy, please contact
+                  us at:
                 </p>
                 <a
                   href="mailto:kauhsikverma321@gmail.com"
@@ -92,8 +86,8 @@ export default function RefundPolicyPage() {
 
               <div className="mt-8 text-sm text-gray-500">
                 <p>
-                  This policy is subject to change without prior notice. Please
-                  review this page periodically for any updates.
+                  This policy is subject to change without prior notice. Please review this page
+                  periodically for any updates.
                 </p>
               </div>
             </CardContent>
@@ -106,11 +100,7 @@ export default function RefundPolicyPage() {
 
 function PolicySection({ icon, title, description, cancellation }) {
   return (
-    <MotionDiv
-      viewport={{ once: true }}
-      variants={itemVariants}
-      className="flex gap-6"
-    >
+    <MotionDiv viewport={{ once: true }} variants={itemVariants} className="flex gap-6">
       <div className="shrink-0">{icon}</div>
       <div>
         <h3 className="mb-2 text-xl font-bold text-gray-900">{title}</h3>

@@ -58,13 +58,11 @@ export default function CancelButton({ userId }) {
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>
-              Are you sure you want to cancel?
-            </AlertDialogTitle>
+            <AlertDialogTitle>Are you sure you want to cancel?</AlertDialogTitle>
             <AlertDialogDescription>
-              If you cancel now, your premium features will be disabled
-              immediately, and you&rsquo;ll lose access to all pro benefits. You
-              can always re-subscribe anytime to unlock them again.
+              If you cancel now, your premium features will be disabled immediately, and
+              you&rsquo;ll lose access to all pro benefits. You can always re-subscribe anytime to
+              unlock them again.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

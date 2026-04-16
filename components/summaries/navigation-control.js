@@ -19,7 +19,7 @@ export default function NavigationControl({
           disabled={currentSection === 0}
           className={cn(
             'h-12 w-12 rounded-full border border-rose-500/10 bg-linear-to-br from-rose-500 to-rose-600 backdrop-blur-xs transition-all duration-200',
-            currentSection === 0 ? 'opacity-50' : 'hover:bg-rose-500/20'
+            currentSection === 0 ? 'opacity-50' : 'hover:bg-rose-500/20',
           )}
         >
           <ChevronLeft className="h-6 w-6" />
@@ -34,7 +34,7 @@ export default function NavigationControl({
                 'h-2 w-2 rounded-full transition-all duration-300',
                 currentSection === index
                   ? 'bg-linear-to-r from-rose-500 to-rose-600'
-                  : 'bg-rose-500/20 hover:bg-rose-500/30'
+                  : 'bg-rose-500/20 hover:bg-rose-500/30',
               )}
             />
           ))}
@@ -47,9 +47,7 @@ export default function NavigationControl({
           disabled={currentSection === totalSection - 1}
           className={cn(
             'h-12 w-12 rounded-full border border-rose-500/10 bg-linear-to-br from-rose-500 to-rose-600 backdrop-blur-xs transition-all duration-200',
-            currentSection === totalSection - 1
-              ? 'opacity-50'
-              : 'hover:bg-rose-500/20'
+            currentSection === totalSection - 1 ? 'opacity-50' : 'hover:bg-rose-500/20',
           )}
         >
           <ChevronRight className="h-6 w-6" />

@@ -6,9 +6,7 @@ export default function ContactInfo() {
     <div className="space-y-6">
       <Card className="overflow-hidden border-rose-100/30 bg-white/80 shadow-xl backdrop-blur-md transition-all duration-300 hover:bg-white/90 hover:shadow-2xl">
         <CardContent className="p-6">
-          <h3 className="mb-4 text-xl font-semibold text-gray-900">
-            Contact Information
-          </h3>
+          <h3 className="mb-4 text-xl font-semibold text-gray-900">Contact Information</h3>
 
           <div className="space-y-4">
             <div className="flex items-start">
@@ -62,9 +60,7 @@ export default function ContactInfo() {
 
       <Card className="overflow-hidden border-rose-100/30 bg-white/80 shadow-xl backdrop-blur-md transition-all duration-300 hover:bg-white/90 hover:shadow-2xl">
         <CardContent className="p-6">
-          <h3 className="mb-4 text-xl font-semibold text-gray-900">
-            Frequently Asked Questions
-          </h3>
+          <h3 className="mb-4 text-xl font-semibold text-gray-900">Frequently Asked Questions</h3>
 
           <div className="space-y-4">
             <div>
@@ -72,8 +68,7 @@ export default function ContactInfo() {
                 How quickly will I receive a response?
               </h4>
               <p className="mt-1 text-sm text-gray-600">
-                We typically respond to all inquiries within 24-48 hours during
-                business days.
+                We typically respond to all inquiries within 24-48 hours during business days.
               </p>
             </div>
 
@@ -82,8 +77,8 @@ export default function ContactInfo() {
                 Do you offer custom solutions?
               </h4>
               <p className="mt-1 text-sm text-gray-600">
-                Yes! Contact us with your specific requirements, and we'll work
-                with you to create a tailored solution.
+                Yes! Contact us with your specific requirements, and we'll work with you to create a
+                tailored solution.
               </p>
             </div>
 
@@ -92,8 +87,8 @@ export default function ContactInfo() {
                 How can I request technical support?
               </h4>
               <p className="mt-1 text-sm text-gray-600">
-                For technical issues, please include your account details and a
-                description of the problem in your message.
+                For technical issues, please include your account details and a description of the
+                problem in your message.
               </p>
             </div>
           </div>

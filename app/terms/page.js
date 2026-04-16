@@ -1,19 +1,8 @@
 import BgGradient from '@/components/common/bg-gradient';
-import {
-  MotionDiv,
-  MotionH1,
-  MotionP,
-} from '@/components/common/motion-wrapper';
+import { MotionDiv, MotionH1, MotionP } from '@/components/common/motion-wrapper';
 import { containerVariants, itemVariants } from '@/utils/constants';
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Gavel,
-  Shield,
-  FileText,
-  Globe,
-  Users,
-  AlertTriangle,
-} from 'lucide-react';
+import { Gavel, Shield, FileText, Globe, Users, AlertTriangle } from 'lucide-react';
 
 export default function TermsPage() {
   return (
@@ -52,12 +41,10 @@ export default function TermsPage() {
                 className="mb-6 text-gray-700"
               >
                 For the purpose of these Terms and Conditions, the terms{' '}
-                <strong>"we", "us", "our"</strong> refer to{' '}
-                <strong>KAUSHIK VERMA</strong>, whose registered/operational
-                office is KIIT University, Bhubaneswar, ODISHA 751024. The terms{' '}
-                <strong>"you", "your", "user", "visitor"</strong> refer to any
-                natural or legal person who is visiting our website and/or
-                agreed to purchase from us.
+                <strong>"we", "us", "our"</strong> refer to <strong>KAUSHIK VERMA</strong>, whose
+                registered/operational office is KIIT University, Bhubaneswar, ODISHA 751024. The
+                terms <strong>"you", "your", "user", "visitor"</strong> refer to any natural or
+                legal person who is visiting our website and/or agreed to purchase from us.
               </MotionP>
 
               <MotionP
@@ -65,8 +52,8 @@ export default function TermsPage() {
                 variants={itemVariants}
                 className="mb-6 text-gray-700"
               >
-                Your use of the website and/or purchases from us are governed by
-                the following Terms and Conditions:
+                Your use of the website and/or purchases from us are governed by the following Terms
+                and Conditions:
               </MotionP>
 
               <div className="space-y-8">
@@ -120,14 +107,12 @@ export default function TermsPage() {
               <div className="mt-10 rounded-lg bg-gray-50 p-6">
                 <div className="flex items-center gap-3">
                   <Gavel className="h-6 w-6 text-rose-500" />
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Legal Notice
-                  </h3>
+                  <h3 className="text-lg font-semibold text-gray-900">Legal Notice</h3>
                 </div>
                 <p className="mt-3 text-sm text-gray-600">
-                  These terms and conditions are subject to change without prior
-                  notice. By using our website, you agree to be bound by the
-                  current version of these Terms and Conditions.
+                  These terms and conditions are subject to change without prior notice. By using
+                  our website, you agree to be bound by the current version of these Terms and
+                  Conditions.
                 </p>
               </div>
             </CardContent>
@@ -140,11 +125,7 @@ export default function TermsPage() {
 
 function TermsSection({ icon, title, items }) {
   return (
-    <MotionDiv
-      viewport={{ once: true }}
-      variants={itemVariants}
-      className="space-y-3"
-    >
+    <MotionDiv viewport={{ once: true }} variants={itemVariants} className="space-y-3">
       <div className="flex items-center gap-3">
         {icon}
         <h3 className="text-xl font-semibold text-gray-900">{title}</h3>

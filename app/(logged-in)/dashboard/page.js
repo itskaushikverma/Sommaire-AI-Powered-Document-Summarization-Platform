@@ -9,11 +9,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React from 'react';
 import { hasReachedUploadLimit } from '@/lib/user';
-import {
-  MotionDiv,
-  MotionH1,
-  MotionP,
-} from '@/components/common/motion-wrapper';
+import { MotionDiv, MotionH1, MotionP } from '@/components/common/motion-wrapper';
 import { itemVariants } from '@/utils/constants';
 
 export default async function page() {
@@ -90,17 +86,11 @@ export default async function page() {
             >
               <div className="rounded-lg border border-rose-200 bg-rose-50 p-4 text-rose-800">
                 <p className="flex gap-1 text-sm">
-                  You've reached the limit of 5 uploads on the Basic plan.
-                  Please delete some summaries to make room for new ones or{' '}
-                  <Link
-                    className="flex items-center justify-between"
-                    href="/#pricing"
-                  >
+                  You've reached the limit of 5 uploads on the Basic plan. Please delete some
+                  summaries to make room for new ones or{' '}
+                  <Link className="flex items-center justify-between" href="/#pricing">
                     {' '}
-                    <span className="font-bold underline">
-                      {' '}
-                      upgrade to Pro{' '}
-                    </span>
+                    <span className="font-bold underline"> upgrade to Pro </span>
                     <ArrowRight size={18} /> for more uploads.
                   </Link>
                 </p>

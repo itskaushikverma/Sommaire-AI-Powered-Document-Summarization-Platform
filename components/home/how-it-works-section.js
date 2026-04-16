@@ -10,8 +10,7 @@ const steps = [
   {
     icon: <BrainCircuit size={64} strokeWidth={1.5} />,
     label: 'AI Analysis ✨',
-    description:
-      'Our advanced AI processes and analyzes your document instantly',
+    description: 'Our advanced AI processes and analyzes your document instantly',
   },
   {
     icon: <FileOutput size={64} strokeWidth={1.5} />,
@@ -54,8 +53,7 @@ export default function HowitworksSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto max-w-2xl text-3xl font-bold"
           >
-            Transform any PDF into an easy-to-digest summary in three simple
-            steps
+            Transform any PDF into an easy-to-digest summary in three simple steps
           </MotionH3>
         </div>
 
@@ -78,11 +76,7 @@ export default function HowitworksSection() {
                   transition={{ duration: 0.5, delay: idx * 0.2 + 0.3 }}
                   className="absolute top-1/2 -right-4 z-10 hidden -translate-y-1/2 transform md:block"
                 >
-                  <MoveRight
-                    size={32}
-                    strokeWidth={1}
-                    className="text-rose-400"
-                  />
+                  <MoveRight size={32} strokeWidth={1} className="text-rose-400" />
                 </MotionDiv>
               )}
             </MotionDiv>

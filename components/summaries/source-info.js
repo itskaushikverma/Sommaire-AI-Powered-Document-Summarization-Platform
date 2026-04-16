@@ -2,13 +2,7 @@ import { ExternalLink, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import DownloadSummaryButton from './download-summary-button';
 
-export default function SourceInfo({
-  fileName,
-  originalFileUrl,
-  title,
-  summaryText,
-  createdAt,
-}) {
+export default function SourceInfo({ fileName, originalFileUrl, title, summaryText, createdAt }) {
   return (
     <div className="text-muted-foreground flex flex-col items-center justify-between gap-4 text-sm lg:flex-row">
       <div className="flex items-center justify-center gap-2">

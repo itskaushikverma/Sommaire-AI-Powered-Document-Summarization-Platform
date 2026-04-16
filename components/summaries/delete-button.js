@@ -25,11 +25,7 @@ export default function DeleteButton({ summaryId }) {
       const result = await deleteSummaryAction({ summaryId });
       if (!result.success) {
         toast('Error', {
-          description: (
-            <span className="font-semibold text-red-500">
-              Failed to Delete Summary
-            </span>
-          ),
+          description: <span className="font-semibold text-red-500">Failed to Delete Summary</span>,
         });
       }
       setOpen(false);
@@ -51,8 +47,7 @@ export default function DeleteButton({ summaryId }) {
         <DialogHeader>
           <DialogTitle>Delete Summary</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete this summary? This action cannot be
-            undone.
+            Are you sure you want to delete this summary? This action cannot be undone.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
@@ -60,7 +55,7 @@ export default function DeleteButton({ summaryId }) {
             variant="outline"
             className={cn(
               'border border-gray-200 bg-gray-50 duration-200 hover:bg-gray-100 hover:text-gray-600',
-              isPending ? 'cursor-not-allowed' : 'cursor-pointer'
+              isPending ? 'cursor-not-allowed' : 'cursor-pointer',
             )}
             onClick={() => setOpen(false)}
           >
@@ -71,7 +66,7 @@ export default function DeleteButton({ summaryId }) {
             variant="destructive"
             className={cn(
               'bg-rose-500 hover:bg-rose-600',
-              isPending ? 'cursor-not-allowed' : 'cursor-pointer'
+              isPending ? 'cursor-not-allowed' : 'cursor-pointer',
             )}
             onClick={handleDelete}
           >

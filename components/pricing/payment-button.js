@@ -42,11 +42,7 @@ const PaymentButton = ({ email, razorpayKey }) => {
         subscription_id: subscription.id,
         name: 'Sommaire AI Pro',
         handler: async function (response) {
-          const {
-            razorpay_payment_id,
-            razorpay_subscription_id,
-            razorpay_signature,
-          } = response;
+          const { razorpay_payment_id, razorpay_subscription_id, razorpay_signature } = response;
           const verifyRes = await fetch('/api/payment/verifySubscription', {
             method: 'POST',
             headers: {
@@ -91,8 +87,7 @@ const PaymentButton = ({ email, razorpayKey }) => {
         onClick={handlePayment}
         disabled={!isScriptLoaded || isProcessing}
       >
-        {isProcessing ? 'Processing...' : 'Try Now'}{' '}
-        {!isProcessing && <ArrowRight size={18} />}
+        {isProcessing ? 'Processing...' : 'Try Now'} {!isProcessing && <ArrowRight size={18} />}
       </button>
     </>
   );

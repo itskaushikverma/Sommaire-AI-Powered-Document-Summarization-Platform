@@ -243,17 +243,6 @@
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Contact
-
-<div align="center">
-  <img src="https://github.com/kaushik-2318.png" alt="Developer" width="100" style="border-radius:50%"/>
-  <h3>Kaushik Verma</h3>
-  
-  [![Email](https://img.shields.io/badge/Email-kauhsikverma321%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:kauhsikverma321@gmail.com)
-  [![Website](https://img.shields.io/badge/Website-kaushikverma-000000?style=for-the-badge&logo=vercel)](https://pget.vercel.app/)
-  [![GitHub](https://img.shields.io/badge/GitHub-kaushik--2318-181717?style=for-the-badge&logo=github)](https://github.com/kaushik-2318)
-</div>
-
 ## 🙏 Acknowledgements
 
 - [Next.js](https://nextjs.org/) for the incredible React framework
@@ -264,8 +253,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-  <p>If you found this project helpful, please consider giving it a ⭐️</p>
-  
-  [![GitHub stars](https://img.shields.io/github/stars/kaushik-2318/sommaire?style=social)](https://github.com/kaushik-2318/sommaire)
-</div>
+<!-- AUTHOR_SECTION_START -->
+
+n kjnkjnkjn
+
+<!-- AUTHOR_SECTION_END -->

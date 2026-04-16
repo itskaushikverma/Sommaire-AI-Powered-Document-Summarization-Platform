@@ -34,9 +34,7 @@ export default async function SubscriptionPage() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <div>
-              <CardTitle>
-                {status === 'subscribed' ? 'Pro' : 'Basic'} Plan
-              </CardTitle>
+              <CardTitle>{status === 'subscribed' ? 'Pro' : 'Basic'} Plan</CardTitle>
               {status === 'subscribed' ? (
                 <CardDescription>Billed monthly</CardDescription>
               ) : (
@@ -52,22 +50,17 @@ export default async function SubscriptionPage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-4">
               <span className="text-muted-foreground">Billing cycle</span>
-              <span className="font-medium">
-                {status === 'subscribed' ? 'Monthly' : 'N/A'}
-              </span>
+              <span className="font-medium">{status === 'subscribed' ? 'Monthly' : 'N/A'}</span>
             </div>
             <div className="flex items-center justify-between border-b pb-4">
               <span className="text-muted-foreground">Next billing date</span>
               <span className="font-medium">
                 {status === 'subscribed' && subscriptionDetails?.nextBillingDate
-                  ? subscriptionDetails.nextBillingDate.toLocaleDateString(
-                      'en-US',
-                      {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      }
-                    )
+                  ? subscriptionDetails.nextBillingDate.toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })
                   : 'N/A'}
               </span>
             </div>
@@ -75,14 +68,11 @@ export default async function SubscriptionPage() {
               <span className="text-muted-foreground">Last Payment</span>
               <span className="font-medium">
                 {lastPayment
-                  ? new Date(lastPayment.updated_at).toLocaleDateString(
-                      'en-US',
-                      {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      }
-                    )
+                  ? new Date(lastPayment.updated_at).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })
                   : 'N/A'}
               </span>
             </div>
@@ -106,9 +96,7 @@ export default async function SubscriptionPage() {
       <Card>
         <CardHeader>
           <CardTitle>Subscription Benefits</CardTitle>
-          <CardDescription>
-            What's included in your Premium Plan
-          </CardDescription>
+          <CardDescription>What's included in your Premium Plan</CardDescription>
         </CardHeader>
         <CardContent>
           {pricingPlans[1].items.map((item, idx) => (

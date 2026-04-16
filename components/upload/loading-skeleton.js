@@ -9,14 +9,11 @@ export default function LoadingSkeleton() {
       <div className="bg-background/80 absolute top-0 right-0 left-0 z-20 border-b border-rose-500/10 pt-4 pb-2 backdrop-blur-xs">
         <div className="flex gap-1.5 px-4">
           {[1, 2, 3].map((_, index) => (
-            <div
-              key={index}
-              className="h-1.5 flex-1 overflow-hidden rounded-full bg-rose-500/10"
-            >
+            <div key={index} className="h-1.5 flex-1 overflow-hidden rounded-full bg-rose-500/10">
               <div
                 className={cn(
                   'h-full animate-pulse bg-linear-to-r from-gray-500 to-rose-600',
-                  index === 0 ? 'w-full' : 'w-0'
+                  index === 0 ? 'w-full' : 'w-0',
                 )}
               />
             </div>
@@ -69,10 +66,7 @@ export default function LoadingSkeleton() {
           <Skeleton className="h-12 w-12 rounded-full bg-linear-to-br from-rose-500/50 to-rose-600/50" />
           <div className="flex gap-2">
             {[1, 2, 3, 4, 5, 6].map((_, index) => (
-              <Skeleton
-                key={index}
-                className="h-2 w-2 rounded-full bg-rose-500/20"
-              />
+              <Skeleton key={index} className="h-2 w-2 rounded-full bg-rose-500/20" />
             ))}
           </div>
 

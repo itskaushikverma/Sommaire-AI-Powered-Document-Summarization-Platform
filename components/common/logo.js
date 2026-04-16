@@ -30,12 +30,7 @@ export function Logo({ size = 'default', className, href = '/' }) {
           xmlns="http://www.w3.org/2000/svg"
           className={cn('h-full w-auto')}
         >
-          <circle
-            cx="60"
-            cy="60"
-            r="50"
-            className="fill-white dark:fill-gray-800"
-          />
+          <circle cx="60" cy="60" r="50" className="fill-white dark:fill-gray-800" />
 
           <circle
             cx="60"
@@ -167,9 +162,7 @@ export function Logo({ size = 'default', className, href = '/' }) {
         <span className="bg-linear-to-r from-rose-600 via-rose-500 to-rose-400 bg-clip-text text-transparent dark:from-rose-400 dark:via-rose-500 dark:to-rose-300">
           Sommaire
         </span>
-        <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">
-          AI
-        </span>
+        <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">AI</span>
       </MotionDiv>
     </div>
   );

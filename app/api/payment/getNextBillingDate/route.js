@@ -11,15 +11,11 @@ export async function POST(req) {
     }
 
     const sql = await getDbConnection();
-    const result =
-      await sql`SELECT subscription_id FROM users WHERE user_id = ${user_id}`;
+    const result = await sql`SELECT subscription_id FROM users WHERE user_id = ${user_id}`;
     const subscriptionId = result?.[0]?.subscription_id;
 
     if (!subscriptionId) {
-      return NextResponse.json(
-        { error: 'No subscription found for user' },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: 'No subscription found for user' }, { status: 404 });
     }
 
     const subscription = await razorpay.subscriptions.fetch(subscriptionId);
@@ -32,9 +28,6 @@ export async function POST(req) {
     });
   } catch (error) {
     console.error('Error fetching billing date:', error);
-    return NextResponse.json(
-      { error: 'Internal Server Error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

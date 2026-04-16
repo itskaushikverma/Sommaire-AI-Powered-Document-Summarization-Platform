@@ -82,14 +82,7 @@ export async function generatePdfSummary({ pdfText, fileName }) {
   }
 }
 
-async function savePdfSummary({
-  userId,
-  fileUrl,
-  summary,
-  title,
-  fileName,
-  key,
-}) {
+async function savePdfSummary({ userId, fileUrl, summary, title, fileName, key }) {
   try {
     const sql = await getDbConnection();
     const [savedSummary] =
@@ -101,13 +94,7 @@ async function savePdfSummary({
   }
 }
 
-export async function storePdfSummaryAction({
-  fileUrl,
-  summary,
-  title,
-  fileName,
-  key,
-}) {
+export async function storePdfSummaryAction({ fileUrl, summary, title, fileName, key }) {
   let saveSummary;
   try {
     const { userId } = await auth();

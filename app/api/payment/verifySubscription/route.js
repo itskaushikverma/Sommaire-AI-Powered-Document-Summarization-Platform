@@ -6,13 +6,8 @@ export async function POST(req) {
   try {
     const body = await req.json();
 
-    const {
-      razorpay_payment_id,
-      razorpay_subscription_id,
-      razorpay_signature,
-      email,
-      userId,
-    } = body;
+    const { razorpay_payment_id, razorpay_subscription_id, razorpay_signature, email, userId } =
+      body;
 
     const expectedSignature = crypto
       .createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
@@ -39,9 +34,6 @@ export async function POST(req) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Verify Subscription Error:', error);
-    return NextResponse.json(
-      { error: 'Internal Server Error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

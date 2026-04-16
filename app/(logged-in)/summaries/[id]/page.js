@@ -16,14 +16,7 @@ export default async function SummaryPage(props) {
     notFound();
   }
 
-  const {
-    title,
-    summary_text,
-    file_name,
-    word_count,
-    created_at,
-    original_file_url,
-  } = summary;
+  const { title, summary_text, file_name, word_count, created_at, original_file_url } = summary;
   const readingTime = Math.ceil((word_count || 0) / 200);
 
   return (
@@ -38,11 +31,7 @@ export default async function SummaryPage(props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <SummaryHeader
-              title={title}
-              createdAt={created_at}
-              readingTime={readingTime}
-            />
+            <SummaryHeader title={title} createdAt={created_at} readingTime={readingTime} />
           </MotionDiv>
           {file_name && (
             <SourceInfo

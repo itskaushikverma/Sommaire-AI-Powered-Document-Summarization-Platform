@@ -1,8 +1,4 @@
-import {
-  containerVariants,
-  itemVariants,
-  pricingPlans,
-} from '@/utils/constants';
+import { containerVariants, itemVariants, pricingPlans } from '@/utils/constants';
 import { MotionDiv, MotionSection } from '../common/motion-wrapper';
 import PricingCardBasic from '../pricing/pricing-card-basic';
 import PricingCardPro from '../pricing/pricing-card-pro';
@@ -23,9 +19,7 @@ export default function PricingSection() {
           variants={itemVariants}
           className="flex w-full items-center justify-center pb-12"
         >
-          <h2 className="mb-8 text-xl font-bold text-rose-500 uppercase">
-            Pricing
-          </h2>
+          <h2 className="mb-8 text-xl font-bold text-rose-500 uppercase">Pricing</h2>
         </MotionDiv>
         <div className="relative flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
           <PricingCardPro key={'pro'} {...pricingPlans[1]} />

@@ -19,10 +19,7 @@ export const UploadFormInput = ({ onSubmit, isLoading, ref }) => {
           className={cn(isLoading && 'cursor-not-allowed opacity-50')}
           disabled={isLoading}
         />
-        <Button
-          disabled={isLoading}
-          className="bg-rose-600 hover:cursor-pointer hover:bg-rose-700"
-        >
+        <Button disabled={isLoading} className="bg-rose-600 hover:cursor-pointer hover:bg-rose-700">
           {isLoading ? (
             <>
               <Loader2Icon className="mr-2 h-4 w-4 animate-spin" />

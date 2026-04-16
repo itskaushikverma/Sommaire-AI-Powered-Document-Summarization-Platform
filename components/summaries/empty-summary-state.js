@@ -7,9 +7,7 @@ export default function EmptySummaryState() {
     <div className="py-12 text-center">
       <div className="flex flex-col items-center gap-4">
         <FileText className="h-16 w-16 text-gray-400" />
-        <h2 className="text-xl font-semibold text-gray-600">
-          No Summaries yet!!!
-        </h2>
+        <h2 className="text-xl font-semibold text-gray-600">No Summaries yet!!!</h2>
         <p className="max-w-md text-gray-500">
           Upload your first PDF to get started with AI-Powered Summaries
         </p>

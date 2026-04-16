@@ -21,11 +21,9 @@ const SectionTitle = ({ title }) => {
 export default function SummaryViewer({ summary }) {
   const [currentSection, setCurrentSection] = useState(0);
 
-  const handleNext = () =>
-    setCurrentSection((prev) => Math.min(prev + 1, sections.length - 1));
+  const handleNext = () => setCurrentSection((prev) => Math.min(prev + 1, sections.length - 1));
 
-  const handlePrevious = () =>
-    setCurrentSection((prev) => Math.max(prev - 1, 0));
+  const handlePrevious = () => setCurrentSection((prev) => Math.max(prev - 1, 0));
 
   const sections = summary
     .split('\n# ')

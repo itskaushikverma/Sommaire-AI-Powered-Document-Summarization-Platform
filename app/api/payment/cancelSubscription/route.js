@@ -6,8 +6,7 @@ export async function POST(req) {
   const { user_id, email } = await req.json();
   const sql = await getDbConnection();
 
-  const query =
-    await sql`SELECT subscription_id FROM users WHERE user_id = ${user_id}`;
+  const query = await sql`SELECT subscription_id FROM users WHERE user_id = ${user_id}`;
   const subscriptionId = query?.[0]?.subscription_id;
 
   if (!subscriptionId || !user_id) {
@@ -35,9 +34,6 @@ export async function POST(req) {
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error('Cancel error:', err);
-    return NextResponse.json(
-      { error: 'Failed to cancel subscription' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to cancel subscription' }, { status: 500 });
   }
 }

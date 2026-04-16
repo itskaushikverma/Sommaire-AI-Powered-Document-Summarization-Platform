@@ -13,7 +13,7 @@ export default function BgGradient({ className }) {
         }}
         className={cn(
           'cyan-500 relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-br from-emerald-500 via-teal-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72rem]',
-          className
+          className,
         )}
       />
     </div>

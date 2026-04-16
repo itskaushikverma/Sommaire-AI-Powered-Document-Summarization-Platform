@@ -16,14 +16,8 @@ import { formatFileNameAsTitle } from '@/utils/file-format';
 const schema = z.object({
   file: z
     .instanceof(File, { message: 'Invalid File' })
-    .refine(
-      (file) => file.size < 20 * 1024 * 1024,
-      'File Must be less than 20MB'
-    )
-    .refine(
-      (file) => file.type.startsWith('application/pdf'),
-      'File Must be a PDF'
-    ),
+    .refine((file) => file.size < 20 * 1024 * 1024, 'File Must be less than 20MB')
+    .refine((file) => file.type.startsWith('application/pdf'), 'File Must be a PDF'),
 });
 
 export default function UploadForm() {
@@ -37,9 +31,7 @@ export default function UploadForm() {
     },
     onUploadError: (err) => {
       toast('Error occurred while uploading', {
-        description: (
-          <span className="font-semibold text-red-500">{err.message}</span>
-        ),
+        description: <span className="font-semibold text-red-500">{err.message}</span>,
       });
     },
     onUploadBegin: (data) => {
@@ -65,8 +57,7 @@ export default function UploadForm() {
         toast('❌ Something went Wrong', {
           description: (
             <span className="font-semibold text-red-500">
-              {validedFields.error.flatten().fieldErrors.file?.[0] ??
-                'Invalid File'}
+              {validedFields.error.flatten().fieldErrors.file?.[0] ?? 'Invalid File'}
             </span>
           ),
         });
@@ -87,9 +78,7 @@ export default function UploadForm() {
       if (!uploadResponse) {
         toast('⚠️ Something Went Wrong', {
           description: (
-            <span className="font-semibold text-red-500">
-              Please use a different file.
-            </span>
+            <span className="font-semibold text-red-500">Please use a different file.</span>
           ),
         });
         setIsLoading(false);
@@ -174,29 +163,18 @@ export default function UploadForm() {
           <div className="w-full border-t border-gray-200 dark:border-gray-800" />
         </div>
         <div className="relative flex justify-center">
-          <span className="bg-background text-muted-foreground px-3 text-sm">
-            Uplaod PDF
-          </span>
+          <span className="bg-background text-muted-foreground px-3 text-sm">Uplaod PDF</span>
         </div>
       </div>
-      <UploadFormInput
-        isLoading={isLoading}
-        ref={formRef}
-        onSubmit={handleSubmit}
-      />
+      <UploadFormInput isLoading={isLoading} ref={formRef} onSubmit={handleSubmit} />
       {/* {isLoading && ( */}
       <>
         <div className="relative">
-          <div
-            className="absolute inset-0 flex items-center"
-            aria-hidden="true"
-          >
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
             <div className="w-full border-t border-gray-200 dark:border-gray-800" />
           </div>
           <div className="relative flex justify-center">
-            <span className="bg-background text-muted-foreground px-3 text-sm">
-              Processing
-            </span>
+            <span className="bg-background text-muted-foreground px-3 text-sm">Processing</span>
           </div>
         </div>
         <LoadingSkeleton />

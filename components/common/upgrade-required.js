@@ -12,9 +12,7 @@ export default function UpgradeRequired() {
         <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-8 text-center">
           <div className="flex items-center gap-2 text-rose-500">
             <Sparkle className="h-6 w-6" />
-            <span className="text-sm font-medium tracking-wider uppercase">
-              Premium Feature
-            </span>
+            <span className="text-sm font-medium tracking-wider uppercase">Premium Feature</span>
           </div>
 
           <h1 className="bg-linear-to-r from-gray-900 to-gray-600 bg-clip-text text-4xl font-bold tracking-tighter text-transparent">

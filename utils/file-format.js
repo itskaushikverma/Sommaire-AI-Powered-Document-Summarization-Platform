@@ -1,8 +1,6 @@
 export function formatFileNameAsTitle(fileName) {
   const withoutExtension = fileName.replace(/\.[^/.]+$/, '');
-  const withSpaces = withoutExtension
-    .replace(/[-_]+/g, ' ')
-    .replace(/([a-z])([A-Z])/g, '$1 $2');
+  const withSpaces = withoutExtension.replace(/[-_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2');
 
   return withSpaces
     .split(' ')

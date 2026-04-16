@@ -1,10 +1,5 @@
 import BgGradient from '@/components/common/bg-gradient';
-import {
-  MotionDiv,
-  MotionH1,
-  MotionP,
-  MotionH2,
-} from '@/components/common/motion-wrapper';
+import { MotionDiv, MotionH1, MotionP, MotionH2 } from '@/components/common/motion-wrapper';
 import { containerVariants, itemVariants } from '@/utils/constants';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Database, Cookie, UserCheck, Mail } from 'lucide-react';
@@ -45,13 +40,9 @@ export default function PrivacyPolicyPage() {
                 variants={itemVariants}
                 className="mb-8 leading-relaxed text-gray-700"
               >
-                This Privacy Policy outlines how <strong>Kaushik Verma</strong>{' '}
-                collects, uses, and protects any information that you provide
-                when using this website:{' '}
-                <a
-                  href="https://sommaire-kv.vercel.app"
-                  className="text-rose-600 hover:underline"
-                >
+                This Privacy Policy outlines how <strong>Kaushik Verma</strong> collects, uses, and
+                protects any information that you provide when using this website:{' '}
+                <a href="https://sommaire-kv.vercel.app" className="text-rose-600 hover:underline">
                   https://sommaire-kv.vercel.app
                 </a>
                 .
@@ -62,10 +53,9 @@ export default function PrivacyPolicyPage() {
                 variants={itemVariants}
                 className="mb-8 leading-relaxed text-gray-700"
               >
-                Kaushik Verma is committed to ensuring your privacy is
-                protected. Should we ask you to provide information by which you
-                can be identified while using this site, rest assured it will
-                only be used in accordance with this policy.
+                Kaushik Verma is committed to ensuring your privacy is protected. Should we ask you
+                to provide information by which you can be identified while using this site, rest
+                assured it will only be used in accordance with this policy.
               </MotionP>
 
               <div className="space-y-10">
@@ -77,12 +67,10 @@ export default function PrivacyPolicyPage() {
                       <li>Full name</li>
                       <li>Contact details, including email address</li>
                       <li>
-                        Demographic data such as postcode, preferences, and
-                        interests (if required)
+                        Demographic data such as postcode, preferences, and interests (if required)
                       </li>
                       <li>
-                        Other relevant information for surveys, feedback, or
-                        promotional offers
+                        Other relevant information for surveys, feedback, or promotional offers
                       </li>
                     </ul>
                   }
@@ -95,18 +83,9 @@ export default function PrivacyPolicyPage() {
                     <ul className="ml-6 list-disc space-y-2">
                       <li>Internal record-keeping</li>
                       <li>Improving our products, content, and services</li>
-                      <li>
-                        Sending promotional emails about updates, offers, or
-                        relevant content
-                      </li>
-                      <li>
-                        Conducting market research via email, phone, or other
-                        means
-                      </li>
-                      <li>
-                        Personalizing website experience based on your
-                        preferences
-                      </li>
+                      <li>Sending promotional emails about updates, offers, or relevant content</li>
+                      <li>Conducting market research via email, phone, or other means</li>
+                      <li>Personalizing website experience based on your preferences</li>
                     </ul>
                   }
                 />
@@ -117,20 +96,18 @@ export default function PrivacyPolicyPage() {
                   content={
                     <>
                       <p className="mb-4 text-gray-700">
-                        We use cookies to enhance your browsing experience. A
-                        cookie is a small text file placed on your device to
-                        analyze web traffic and remember user preferences.
+                        We use cookies to enhance your browsing experience. A cookie is a small text
+                        file placed on your device to analyze web traffic and remember user
+                        preferences.
                       </p>
                       <ul className="ml-6 list-disc space-y-2">
                         <li>Track which pages are visited most frequently</li>
                         <li>Improve website usability and performance</li>
                       </ul>
                       <p className="mt-4 text-gray-700">
-                        Cookies do <strong>not</strong> provide access to your
-                        computer or any personal information unless you choose
-                        to share it. You can decline cookies in your browser
-                        settings, although this may affect website
-                        functionality.
+                        Cookies do <strong>not</strong> provide access to your computer or any
+                        personal information unless you choose to share it. You can decline cookies
+                        in your browser settings, although this may affect website functionality.
                       </p>
                     </>
                   }
@@ -142,15 +119,13 @@ export default function PrivacyPolicyPage() {
                   content={
                     <>
                       <ul className="ml-6 list-disc space-y-2">
-                        <li>
-                          Opt out on forms where personal data is collected
-                        </li>
+                        <li>Opt out on forms where personal data is collected</li>
                         <li>Contact us to withdraw consent at any time</li>
                       </ul>
                       <p className="mt-4 text-gray-700">
-                        We <strong>do not</strong> sell, lease, or distribute
-                        your personal information to third parties without your
-                        permission, except when legally required.
+                        We <strong>do not</strong> sell, lease, or distribute your personal
+                        information to third parties without your permission, except when legally
+                        required.
                       </p>
                     </>
                   }
@@ -160,13 +135,11 @@ export default function PrivacyPolicyPage() {
               <div className="mt-10 rounded-lg bg-gray-50 p-6">
                 <div className="flex items-center gap-3">
                   <Mail className="h-6 w-6 text-rose-500" />
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Contact Details
-                  </h3>
+                  <h3 className="text-lg font-semibold text-gray-900">Contact Details</h3>
                 </div>
                 <p className="mt-3 mb-4 text-gray-600">
-                  If you have questions, concerns, or wish to update your
-                  personal information, please contact:
+                  If you have questions, concerns, or wish to update your personal information,
+                  please contact:
                 </p>
                 <div className="space-y-2 text-gray-700">
                   <p>
@@ -195,16 +168,10 @@ export default function PrivacyPolicyPage() {
 
 function PrivacySection({ icon, title, content }) {
   return (
-    <MotionDiv
-      viewport={{ once: true }}
-      variants={itemVariants}
-      className="space-y-4"
-    >
+    <MotionDiv viewport={{ once: true }} variants={itemVariants} className="space-y-4">
       <div className="flex items-center gap-3">
         {icon}
-        <MotionH2 className="text-xl font-semibold text-gray-900">
-          {title}
-        </MotionH2>
+        <MotionH2 className="text-xl font-semibold text-gray-900">{title}</MotionH2>
       </div>
       <div className="ml-11">{content}</div>
     </MotionDiv>

@@ -3,13 +3,7 @@ import { Button } from '../ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Badge } from '../ui/badge';
 import Link from 'next/link';
-import {
-  MotionDiv,
-  MotionH2,
-  MotionSection,
-  MotionH1,
-  MotionSpan,
-} from '../common/motion-wrapper';
+import { MotionDiv, MotionH2, MotionSection, MotionH1, MotionSpan } from '../common/motion-wrapper';
 import { containerVariants, itemVariants } from '@/utils/constants';
 
 const buttonVariants = {
@@ -71,11 +65,7 @@ export default function HeroSection() {
       >
         Get a beautiful summary reel of the document in seconds.
       </MotionH2>
-      <MotionDiv
-        viewport={{ once: true }}
-        variants={itemVariants}
-        whileHover={buttonVariants}
-      >
+      <MotionDiv viewport={{ once: true }} variants={itemVariants} whileHover={buttonVariants}>
         <Button
           variant={'link'}
           className="mt-6 rounded-full bg-linear-to-r from-slate-900 to-rose-500 px-8 py-6 text-base font-bold text-white shadow-lg transition-colors duration-1000 hover:bg-linear-to-r hover:from-rose-500 hover:to-slate-900 hover:no-underline sm:px-10 sm:py-7 sm:text-lg lg:mt-16 lg:px-12 lg:py-8 lg:text-xl"

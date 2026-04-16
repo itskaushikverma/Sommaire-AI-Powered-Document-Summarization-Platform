@@ -13,12 +13,7 @@ export const pricingPlans = [
     name: 'Pro',
     price: 200,
     description: 'Perfect for occasional users',
-    items: [
-      '10 PDF summaries',
-      'Standard processing speed',
-      'Email support',
-      'Markdown Export',
-    ],
+    items: ['10 PDF summaries', 'Standard processing speed', 'Email support', 'Markdown Export'],
     priceId: 'pro_monthly',
   },
 ];

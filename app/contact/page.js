@@ -1,9 +1,5 @@
 import BgGradient from '@/components/common/bg-gradient';
-import {
-  MotionDiv,
-  MotionH1,
-  MotionP,
-} from '@/components/common/motion-wrapper';
+import { MotionDiv, MotionH1, MotionP } from '@/components/common/motion-wrapper';
 import ContactForm from '@/components/contact/contact-form';
 import ContactInfo from '@/components/contact/contact-info';
 import { containerVariants, itemVariants } from '@/utils/constants';
