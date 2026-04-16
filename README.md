@@ -255,6 +255,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- AUTHOR_SECTION_START -->
 
-n kjnkjnkjn
+## 👤 Author
+
+<div align="center">
+  <img src="https://github.com/itskaushikverma.png" alt="Developer" width="100" style="border-radius:50%"/>
+  
+  <h3>Kaushik Verma</h3>
+  
+  <p><em>Building AI tools that turn long documents into clear decisions.</em></p>
+
+[![Email](https://img.shields.io/badge/Email-kaushikverma321@gmail.com%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:kaushikverma321@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Website-kaushikverma-000000?style=for-the-badge&logo=vercel)](https://www.kaushikverma.com)
+[![GitHub](https://img.shields.io/badge/GitHub-kaushik--2318-181717?style=for-the-badge&logo=github)](https://github.com/itskaushikverma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kaushik--2318-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/itskaushikverma)
+[![Twitter](https://img.shields.io/badge/Twitter-kaushik--2318-1DA1F2?style=for-the-badge&logo=twitter)](https://x.com/SilentK68296830)
+
+  <p>Open to product feedback, collaboration, and thoughtful conversation.</p>
+</div>
+
+<div align="center">
+  <p>If you found this project helpful, please consider giving it a ⭐️</p>
+  
+  [![GitHub stars](https://img.shields.io/github/stars/itskaushikverma/Sommaire-AI-Powered-Document-Summarization-Platform?style=social)](https://github.com/itskaushikverma/Sommaire-AI-Powered-Document-Summarization-Platform)
+</div>
 
 <!-- AUTHOR_SECTION_END -->
