@@ -1,4 +1,4 @@
-name: Added Social Media Link to README
+name: Update README from API
 
 on:
   schedule:
@@ -36,13 +36,13 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Check whether README.md actually changed compared to HEAD
-          if git diff --quiet HEAD -- README.md; then
+          # Stage the file
+          git add README.md
+
+          # Check if there are actually changes in the index (the --cached flag is key)
+          if git diff --cached --quiet; then
             echo "No changes to README.md. Skipping."
           else
-            # Stage only README after confirming it changed
-            git add README.md
-
             # 1. Commit the staged changes
             git commit -m "Auto update portfolio URL"
             
