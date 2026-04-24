@@ -68,11 +68,11 @@ async function main() {
   
   <p><em>Building AI tools that turn long documents into clear decisions.</em></p>
 
-  [![Email](https://img.shields.io/badge/Email-${profile.email}%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:${profile.email})
-  [![Portfolio](https://img.shields.io/badge/Website-kaushikverma-000000?style=for-the-badge&logo=vercel)](${profile.portfolio})
-  [![GitHub](https://img.shields.io/badge/GitHub-kaushik--2318-181717?style=for-the-badge&logo=github)](${profile.github})
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-kaushik--2318-0077B5?style=for-the-badge&logo=linkedin)](${profile.linkedin})
-  [![Twitter](https://img.shields.io/badge/Twitter-kaushik--2318-1DA1F2?style=for-the-badge&logo=twitter)](${profile.twitter})
+[![Email](https://img.shields.io/badge/Email-${profile.email}%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:${profile.email})
+[![Portfolio](https://img.shields.io/badge/Website-${profile.portfolio}-000000?style=for-the-badge&logo=vercel)](${profile.portfolio})
+[![GitHub](https://img.shields.io/badge/GitHub-${githubUsername}-181717?style=for-the-badge&logo=github)](${profile.github})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-${profile.linkedin}-0077B5?style=for-the-badge&logo=linkedin)](${profile.linkedin})
+[![Twitter](https://img.shields.io/badge/Twitter-${profile.twitter}-1DA1F2?style=for-the-badge&logo=twitter)](${profile.twitter})
 
   <p>Open to product feedback, collaboration, and thoughtful conversation.</p>
 </div>
@@ -80,7 +80,7 @@ async function main() {
 <div align="center">
   <p>If you found this project helpful, please consider giving it a ⭐️</p>
   
-  [![GitHub stars](https://img.shields.io/github/stars/${githubUsername}/Sommaire-AI-Powered-Document-Summarization-Platform?style=social)](https://github.com/${githubUsername}/Sommaire-AI-Powered-Document-Summarization-Platform)
+  [![GitHub stars](https://img.shields.io/github/stars/${githubUsername}/Sommaire-AI-Powered-Document-Summarization-Platform?style=social)](https://github.com/itskaushikverma/Sommaire-AI-Powered-Document-Summarization-Platform)
 </div>
 `;
 
